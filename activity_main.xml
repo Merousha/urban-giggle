@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vanil_singh.musicplayer2.MainActivity">
+
+    <Button
+        android:id="@+id/Play"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="400dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="29dp"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="250dp"
+        app:layout_constraintRight_toRightOf="@+id/Stop" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="400dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="29dp"
+        android:text="Pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/Play"
+        app:layout_constraintRight_toLeftOf="@+id/Stop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <SeekBar
+        android:id= "@+id/Volume"
+        android:layout_width= "352dp"
+        android:layout_height= "40dp"
+        android:layout_marginBottom= "16dp"
+        android:layout_marginEnd= "16dp"
+        android:layout_marginStart= "16dp"
+        android:layout_marginTop= "16dp"
+        app:layout_constraintBottom_toBottomOf= "parent"
+        app:layout_constraintLeft_toLeftOf= "parent"
+        app:layout_constraintRight_toRightOf= "parent"
+        app:layout_constraintTop_toBottomOf= "@+id/Stop"
+        app:layout_constraintVertical_bias= "0.18" />
+
+    <SeekBar
+        android:id= "@+id/Track"
+        android:layout_width= "352dp"
+        android:layout_height= "40dp"
+        android:layout_marginBottom= "16dp"
+        android:layout_marginEnd= "16dp"
+        android:layout_marginStart= "16dp"
+        android:layout_marginTop= "16dp"
+        app:layout_constraintBottom_toBottomOf= "parent"
+        app:layout_constraintHorizontal_bias= "0.52"
+        app:layout_constraintLeft_toLeftOf= "parent"
+        app:layout_constraintRight_toRightOf= "parent"
+        app:layout_constraintTop_toBottomOf= "@+id/Stop"
+        app:layout_constraintVertical_bias= "0.79" />
+
+    <Button
+        android:id="@+id/Stop"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="400dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="29dp"
+        android:text="STOP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp" />
+</android.support.constraint.ConstraintLayout>
